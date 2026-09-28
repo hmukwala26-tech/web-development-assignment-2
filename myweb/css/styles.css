@@ -1,0 +1,216 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #182848, #4b6cb7);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #4b6cb7;
+    border-radius: 5px;
+}
+
+
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* SECTIONS */
+
+.content-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    color: #182848;
+    border-bottom: 2px solid #4b6cb7;
+    padding-bottom: 8px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #182848;
+    color: white;
+}
+
+
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+figure {
+    width: 30%;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+
+video {
+    display: block;
+    width: 400px
+    max-width: 100%
+    height: auto;
+}
+
+
+
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* FORM */
+
+form {
+    background-color: #f8f9ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #182848;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b6cb7;
+}
+
+
+/* EXTERNAL LINK */
+
+.content-section a {
+    color: #182848;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
